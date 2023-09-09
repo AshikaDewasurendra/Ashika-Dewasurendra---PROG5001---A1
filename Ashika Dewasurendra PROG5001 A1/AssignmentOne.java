@@ -12,7 +12,7 @@ public class AssignmentOne
     Scanner AssignmentOne = new Scanner(System.in);
     double [] assignmentMarks = new double[30];
     
-    double highestMark = 0;
+    double highestMark = 30;
     
     System.out.print("Enter Assignment Name:");
     String assignmentName = AssignmentOne.nextLine();
@@ -33,6 +33,13 @@ public class AssignmentOne
     System.out.println("Assignment Mark " +(i+1)+ ":" +assignmentMarks[i]);
     }
     
+    for(int i=0;i<30;i++){
+    double currentMark = assignmentMarks[i];
+    if(currentMark >= highestMark){
+    highestMark = currentMark;
+    }
+    
+    }
     
     
     
