@@ -14,12 +14,7 @@ public class AssignmentOne
  public static void main(String []args){
     Scanner AssignmentOne = new Scanner(System.in);
     double [] assignmentMarks = new double[30];
-    double highestMark = 0;
-    double lowestMark = 30;
-    double totalMarks =0;
-    double mean = 0;
-    double markDiff = 0;
-    double std=0;
+    
     
     System.out.print("Enter Assignment Name:");
     String assignmentName = AssignmentOne.nextLine();
@@ -39,33 +34,22 @@ public class AssignmentOne
     for(int i =0; i<10;i++){
     System.out.println("Assignment Mark " +(i+1)+ ":" +assignmentMarks[i]);
     }
-
-for(int i=0; i<10;i++){
-double currentMark = assignmentMarks[i];
-if(currentMark >= highestMark){
-highestMark = currentMark;
-}
-if(currentMark<=lowestMark){
-lowestMark = currentMark;
-}
-totalMarks += currentMark;
-}
-mean = totalMarks/assignmentMarks.length;
-
-for(int i =0;i<10;i++){
-double currentMark = assignmentMarks[i];
-markDiff += (mean-currentMark)*(mean-currentMark);
-}
-
-
+//call functios
+    double highestMark = checkHighestMark(assignmentMarks);
+    double lowestMark = checkLowestMark(assignmentMarks);
+    double mean = checkMean(assignmentMarks);
+    double std= checkStandardDeviation(assignmentMarks,mean);
+    
+//print 
 
 System.out.println("Highest Mark: " +highestMark);
 System.out.println("Lowest Mark: " +lowestMark);
 System.out.println("Mean: " +mean);
+System.out.println("Stand Deviation : "+std);
 }
 
 //Get Vaild code 
-public static double CheckHighestMark(double[]currentMark){
+public static double checkHighestMark(double[]currentMark){
     double highestMark = currentMark[0];
     for(int i=0;i<currentMark.length;i++){
         if(currentMark[i] > highestMark){
