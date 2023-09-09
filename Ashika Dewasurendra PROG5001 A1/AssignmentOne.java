@@ -17,8 +17,8 @@ public class AssignmentOne
     System.out.print("Enter Assignment Name:");
     String assignmentName = AssignmentOne.nextLine();
     
-    for(int i =0; i<30;i++){
-    System.out.print("Enter Mark" +(i+1)+ ".");
+    for(int i =0; i<10;i++){
+    System.out.print("Enter Mark  " +(i+1)+ ".");
     assignmentMarks[i] = AssignmentOne.nextDouble();
     
     if(assignmentMarks[i] <0 || assignmentMarks[i] >30){
@@ -29,11 +29,11 @@ public class AssignmentOne
     }
     System.out.println();
     System.out.println("Assignment Name:" +assignmentName);
-    for(int i =0; i<30;i++){
+    for(int i =0; i<10;i++){
     System.out.println("Assignment Mark " +(i+1)+ ":" +assignmentMarks[i]);
     }
     
-    for(int i=0;i<30;i++){
+    for(int i=0;i<10;i++){
     double currentMark = assignmentMarks[i];
     if(currentMark >= highestMark){
     highestMark = currentMark;
