@@ -13,7 +13,7 @@ public class AssignmentOne
     
  public static void main(String []args){
     Scanner AssignmentOne = new Scanner(System.in);
-    double [] assignmentMarks = new double[30];
+    double [] assignmentMarks = new double[10];
     
     
     System.out.print("Enter Assignment Name:");
