@@ -40,7 +40,7 @@ public class AssignmentOne
     }
     
     }
-    
+    System.out.println("Highest Mark is :" +highestMark);
     
     
     
