@@ -84,9 +84,9 @@ return mean;
 public static double checkStandardDeviation(double[]currentMarks,double mean){
     double standardDeviation=0;
    for(double currentMark : currentMarks){
-       standardDeviation += Math.pow(currentMark-mean,2);  }
+       standardDeviation += Math.pow((currentMark-mean),2);  }
        
-       standardDeviation = Math.sqrt((standardDeviation/(currentMarks.length -1)));
+       standardDeviation = Math.sqrt((standardDeviation/(currentMarks.length)));
        return standardDeviation;
 }
 }
