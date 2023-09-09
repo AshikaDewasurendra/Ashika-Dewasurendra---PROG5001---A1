@@ -15,6 +15,7 @@ public class AssignmentOne
     double [] assignmentMarks = new double[30];
     double highestMark = 0;
     double lowestMark = 30;
+    double totalMarks =0;
     
     System.out.print("Enter Assignment Name:");
     String assignmentName = AssignmentOne.nextLine();
@@ -43,7 +44,7 @@ highestMark = currentMark;
 if(currentMark<=lowestMark){
 lowestMark = currentMark;
 }
-
+totalMarks += currentMark;
 }
 System.out.println("Highest Mark: " +highestMark);
 System.out.println("Lowest Mark: " +lowestMark);
