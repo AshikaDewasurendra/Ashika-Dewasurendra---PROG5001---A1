@@ -12,6 +12,17 @@ public class AssignmentOne
     Scanner AssignmentOne = new Scanner(System.in);
     double [] assignmentMarks = new double[30];
     
+    System.out.print("Enter Assignment Name:");
+    String assignmentName = AssignmentOne.nextLine();
+    
+    for(int i =0; i<30;i++){
+    System.out.print("Enter Mark" +(i+1)+ ".");
+    assignmentMarks[i] = AssignmentOne.nextDouble();
+    
+    
+    
+    
+    }
     
     
     }
