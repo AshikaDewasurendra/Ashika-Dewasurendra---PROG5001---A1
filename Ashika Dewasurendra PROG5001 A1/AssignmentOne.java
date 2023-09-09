@@ -13,6 +13,7 @@ public class AssignmentOne
     double [] assignmentMarks = new double[30];
     
     double highestMark = 0;
+    double lowestMark = 0;
     
     System.out.print("Enter Assignment Name:");
     String assignmentName = AssignmentOne.nextLine();
@@ -32,24 +33,22 @@ public class AssignmentOne
     for(int i =0; i<10;i++){
     System.out.println("Assignment Mark " +(i+1)+ ":" +assignmentMarks[i]);
     }
-    
-    for(int i=0;i<10;i++){
-    double currentMark = assignmentMarks[i];
-    if(currentMark >= highestMark){
-    highestMark = currentMark;
-    }
-    
-    }
-    System.out.println("Highest Mark is :" +highestMark);
-    
-    
-    
-    
-    
-    
-    
-    }
-    
-    
-    
 }
+ 
+
+public void findHighestAndLowestMark(){
+
+
+
+
+}
+} 
+ 
+ 
+    
+    
+    
+    
+    
+    
+    
