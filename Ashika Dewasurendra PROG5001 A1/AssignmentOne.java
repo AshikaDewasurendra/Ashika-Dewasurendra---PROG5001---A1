@@ -1,5 +1,6 @@
 
 import java.util.*;
+import java.lang.Math;
 /**
  * Write a description of class AssignmentOne here.
  *
@@ -16,6 +17,9 @@ public class AssignmentOne
     double highestMark = 0;
     double lowestMark = 30;
     double totalMarks =0;
+    double mean = 0;
+    double markDiff = 0;
+    double std=0;
     
     System.out.print("Enter Assignment Name:");
     String assignmentName = AssignmentOne.nextLine();
@@ -46,10 +50,61 @@ lowestMark = currentMark;
 }
 totalMarks += currentMark;
 }
-System.out.println("Highest Mark: " +highestMark);
-System.out.println("Lowest Mark: " +lowestMark);
+mean = totalMarks/assignmentMarks.length;
+
+for(int i =0;i<10;i++){
+double currentMark = assignmentMarks[i];
+markDiff += (mean-currentMark)*(mean-currentMark);
 }
 
+
+
+System.out.println("Highest Mark: " +highestMark);
+System.out.println("Lowest Mark: " +lowestMark);
+System.out.println("Mean: " +mean);
+}
+
+//Get Vaild code 
+public static double CheckHighestMark(double[]currentMark){
+    double highestMark = currentMark[0];
+    for(int i=0;i<currentMark.length;i++){
+        if(currentMark[i] > highestMark){
+            highestMark = currentMark[i];
+        }
+        
+    }
+    return highestMark;
+}
+
+public static double checkLowestMark(double[]currentMarks){
+    double lowestMark = currentMarks[0];
+    for(int i=0;i<currentMarks.length;i++){
+        if(currentMarks[i] < lowestMark){
+            lowestMark = currentMarks[i];
+            
+        }
+        
+    }
+    return lowestMark;
+}
+
+public static double checkMean(double[]currentMarks){
+    double total =0;
+       for(double currentMark : currentMarks){
+       total += currentMark;
+}
+double mean = total/currentMarks.length;
+return mean;
+}
+
+public static double checkStandardDeviation(double[]currentMarks,double mean){
+    double standardDeviation=0;
+   for(double currentMark : currentMarks){
+       standardDeviation += Math.pow(currentMark-mean,2);  }
+       
+       standardDeviation = Math.sqrt((standardDeviation/(currentMarks.length -1)));
+       return standardDeviation;
+}
 }
 
  
