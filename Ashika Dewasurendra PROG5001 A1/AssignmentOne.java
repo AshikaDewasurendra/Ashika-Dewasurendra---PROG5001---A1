@@ -14,6 +14,7 @@ public class AssignmentOne
     Scanner AssignmentOne = new Scanner(System.in);
     double [] assignmentMarks = new double[30];
     double highestMark = 0;
+    double lowestMark = 0;
     
     System.out.print("Enter Assignment Name:");
     String assignmentName = AssignmentOne.nextLine();
@@ -39,8 +40,13 @@ double currentMark = assignmentMarks[i];
 if(currentMark >= highestMark){
 highestMark = currentMark;
 }
+if(currentMark<=lowestMark){
+lowestMark = currentMark;
+}
+
 }
 System.out.println("Highest Mark: " +highestMark);
+System.out.println("Lowest Mark: " +lowestMark);
 }
 
 }
