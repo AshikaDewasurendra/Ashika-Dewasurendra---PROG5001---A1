@@ -34,13 +34,12 @@ public class AssignmentOne
     for(int i =0; i<10;i++){
     System.out.println("Assignment Mark " +(i+1)+ ":" +assignmentMarks[i]);
     }
-//call functios
+
     double highestMark = checkHighestMark(assignmentMarks);
     double lowestMark = checkLowestMark(assignmentMarks);
     double mean = checkMean(assignmentMarks);
     double std= checkStandardDeviation(assignmentMarks,mean);
     
-//print 
 
 System.out.println("Highest Mark: " +highestMark);
 System.out.println("Lowest Mark: " +lowestMark);
@@ -48,7 +47,7 @@ System.out.println("Mean: " +mean);
 System.out.println("Stand Deviation : "+std);
 }
 
-//Get Vaild code 
+
 public static double checkHighestMark(double[]currentMark){
     double highestMark = currentMark[0];
     for(int i=0;i<currentMark.length;i++){
@@ -83,10 +82,11 @@ return mean;
 
 public static double checkStandardDeviation(double[]currentMarks,double mean){
     double standardDeviation=0;
+    double variance = 0;
    for(double currentMark : currentMarks){
-       standardDeviation += Math.pow((currentMark-mean),2);  }
+       variance += Math.pow((currentMark-mean),2);  }
        
-       standardDeviation = Math.sqrt((standardDeviation/(currentMarks.length)));
+       standardDeviation = Math.sqrt((variance/(currentMarks.length)));
        return standardDeviation;
 }
 }
