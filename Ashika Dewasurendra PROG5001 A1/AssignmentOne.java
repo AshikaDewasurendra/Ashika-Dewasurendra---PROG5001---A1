@@ -22,15 +22,16 @@ public class AssignmentOne
     
     for(int i =0; i<30;i++){
     System.out.print("Enter Mark  " +(i+1)+ ".");
-
-    
+    assignmentMarks[i] = AssignmentOne.nextDouble();
     if(assignmentMarks[i] <0 || assignmentMarks[i] >30){
     System.out.println("Invalid Mark, Please re-enter:");
-    i = i-1;
+    
     }
     
     }
+    
     System.out.println();
+    
     System.out.println("Assignment Name:" +assignmentName);
     for(int i =0; i<30;i++){
     System.out.println("Assignment Mark " +(i+1)+ ":" +assignmentMarks[i]);
