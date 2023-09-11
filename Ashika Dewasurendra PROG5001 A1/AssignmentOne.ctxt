@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=AssignmentOne
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ AssignmentOne\ here.\r\n\r\n\ @author\ (Ashika\ Dewasurendra)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\r\n\ This\ is\ Assignment\ one\ of\ unit\ -\ PROG5001.\ Here\ according\ to\ the\ assessment\ requirements,\ I\ have\ developed\ a\ program\ to\ decide\ the\ statistics\r\n\ of\ 30\ students\ marks\ of\ an\ assignment\ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ @author\ (Ashika\ Dewasurendra)\r\n\ Student\ Id\ (24139292)\r\n\ @version\ (09/09/2023)\r\n
 comment1.params=args
 comment1.target=void\ main(java.lang.String[])
 comment2.params=currentMark

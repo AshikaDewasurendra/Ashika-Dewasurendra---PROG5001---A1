@@ -14,7 +14,7 @@ public class AssignmentOne
     
  public static void main(String []args){
     Scanner AssignmentOne = new Scanner(System.in);
-    double [] assignmentMarks = new double[10];
+    double [] assignmentMarks = new double[30];
     
     
     System.out.print("Enter Assignment Name:");
@@ -22,7 +22,7 @@ public class AssignmentOne
     
     for(int i =0; i<30;i++){
     System.out.print("Enter Mark  " +(i+1)+ ".");
-    assignmentMarks[i] = AssignmentOne.nextDouble();
+
     
     if(assignmentMarks[i] <0 || assignmentMarks[i] >30){
     System.out.println("Invalid Mark, Please re-enter:");
