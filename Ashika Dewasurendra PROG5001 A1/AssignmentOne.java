@@ -2,10 +2,11 @@
 import java.util.*;
 import java.lang.Math;
 /**
- * Write a description of class AssignmentOne here.
- *
+ * This is Assignment one of unit - PROG5001. Here according to the assessment requirements, I have developed a program to decide the statistics
+ * of 30 students marks of an assignment              
  * @author (Ashika Dewasurendra)
- * @version (a version number or a date)
+ * Student Id (24139292)
+ * @version (09/09/2023)
  */
 public class AssignmentOne
 {
